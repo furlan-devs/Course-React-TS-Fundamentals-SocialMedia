@@ -1,0 +1,31 @@
+Aula 1 - Iniciando com React
+
+
+* REACT é uma biblioteca JS e não um FrameWork
+
+* NAMED EXPORT é quando utilizamos o export direto na função ou na const, sendo assim este mesmo nome DEVE ser 
+utilizado em algum import e não precisando eu importar o modulo todo e sim apenas o que quero utilizar.
+
+-------------------------------
+* SAO RENDERINF PATTERNS
+
+    * SPA Single-Page-Aplication
+    Em uma SPA, todo o conteúdo do aplicativo é carregado em uma única página, e as atualizações são feitas dinamicamente, 
+    sem a necessidade de recarregar a página.
+
+    * SSR Server-Side Rendering
+    É uma técnica de renderização de páginas web que permite que a primeira visualização da página seja gerada no servidor e 
+    enviada para o navegador do usuário já completa, em vez de serem criadas no cliente por meio do JavaScript.
+
+-------------------------------
+* BUNDLER E COMPILER 
+    BUNDLER é uma ferramenta que agrupa vários arquivos JavaScript (e possivelmente outros tipos de arquivos) em um ou mais pacotes 
+    que podem ser carregados pelo navegador.
+        Exemplo : WebPack 
+
+    COMPILER é um programa que traduz o código fonte JavaScript em um código de saída que pode ser executado pelo navegador ou pelo 
+    ambiente de execução JavaScript.
+        Exemplo: Babel  é usada para transpilar o código JavaScript moderno para uma versão compatível com navegadores mais antigos 
+        ou ambientes de execução que não suportam todas as funcionalidades mais recentes do JavaScript.
+
+-------------------------------
