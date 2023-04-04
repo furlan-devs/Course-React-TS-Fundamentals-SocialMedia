@@ -5,41 +5,43 @@ import { Sidebar } from "./components/Sidebar";
 import styles from "./App.module.css";
 import "./global.css";
 
-export function App() {
+export const App = () => {
   const posts: PostType[] = [
     {
       id: 1,
       author: {
-        avatarUrl: "https://github.com/diego3g.png",
-        name: "Matheus Furlan",
+        avatarUrl: "https://github.com/alysongadelha.png",
+        name: "Alysson G.",
         role: "Front End Developer",
       },
       content: [
-        { type: "paragraph", content: "Fala galeraa 👋" },
+        { type: "paragraph", content: "Fala galera 👋" },
         {
           type: "paragraph",
           content:
-            "Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀",
+            "Hoje postei mais um projeto pra vocês no meu GitHub. Vão lá conferir !",
         },
-        { type: "link", content: "jane.design/doctorcare" },
+        {
+          type: "link",
+          content: "https://github.com/alysongadelha/retomadadopoder",
+        },
       ],
       publishedAt: new Date("2023-04-02 20:00:00"),
     },
     {
       id: 2,
       author: {
-        avatarUrl: "https://github.com/maykbrito.png",
-        name: "Maik Furlan",
+        avatarUrl: "https://github.com/DouglasBavoso.png",
+        name: "Douglas B.",
         role: "Back End Developer",
       },
       content: [
-        { type: "paragraph", content: "Fala galeraa 👋" },
+        { type: "paragraph", content: "Aee timee " },
         {
           type: "paragraph",
-          content:
-            "Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀",
+          content: "Deem um confere no meu mais novo projeto 🚀",
         },
-        { type: "link", content: "jane.design/doctorcare" },
+        { type: "link", content: "https://github.com/DouglasBavoso/dinoGame" },
       ],
       publishedAt: new Date("2023-01-03 20:00:00"),
     },
@@ -59,4 +61,4 @@ export function App() {
       </div>
     </div>
   );
-}
+};

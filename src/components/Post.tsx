@@ -29,7 +29,7 @@ interface PostProps {
 }
 
 export const Post = ({ post }: PostProps) => {
-  const [comments, setComments] = useState(["Post muito legal"]);
+  const [comments, setComments] = useState(["Top demais!"]);
   const [newCommentText, setNewCommnetText] = useState("");
 
   const publishedDateFormatted = format(
@@ -57,16 +57,18 @@ export const Post = ({ post }: PostProps) => {
     setNewCommnetText(event.target.value);
   };
 
-  function handleNewCommentInvalid(event: InvalidEvent<HTMLTextAreaElement>) {
+  const handleNewCommentInvalid = (
+    event: InvalidEvent<HTMLTextAreaElement>
+  ) => {
     event.target.setCustomValidity("Esse campo é obrigatório!");
-  }
+  };
 
-  function deleteComment(commentToDelete: string) {
+  const deleteComment = (commentToDelete: string) => {
     const commentWithoutDeletedOne = comments.filter((comment) => {
       return comment != commentToDelete;
     });
     setComments(commentWithoutDeletedOne);
-  }
+  };
 
   const isNewCommentInputEmpty = newCommentText.length === 0;
 

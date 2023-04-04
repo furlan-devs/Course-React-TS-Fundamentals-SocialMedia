@@ -11,21 +11,21 @@ interface CommentProps {
 export const Comment = ({ content, onDeleteComment }: CommentProps) => {
   const [likeCount, setLikeCount] = useState(0);
 
-  function handleDeleteComment() {
+  const handleDeleteComment = () => {
     onDeleteComment(content);
-  }
+  };
 
-  function handleLikeComment() {
+  const handleLikeComment = () => {
     setLikeCount((state) => {
       return state + 1;
     });
-  }
+  };
 
   return (
     <div className={styles.comment}>
       <Avatar
         hasBorder={false}
-        src="https://avatars.githubusercontent.com/u/53796370?v=4"
+        src="https://github.com/furlan-devs.png"
         alt=""
       />
 
